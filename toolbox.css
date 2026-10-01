@@ -106,3 +106,32 @@ body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#fffdfa,#ee
 
 .tool-tab:nth-child(5) .tool-label{top:95px!important}
 @media(max-width:600px){.tool-tab:nth-child(5) .tool-label{top:74px!important}}
+
+/* Public site: keep the opening automatic and the navigation uncluttered. */
+.controls,.toolbox-replay,.toolbox-hint{display:none!important}
+html{overflow-x:clip}
+/* Keep tool artwork and its lettering in the same coordinate system on phones. */
+@media(max-width:600px){
+.toolbox-scene{width:calc(100vw - 40px)}
+.tool-tab>svg{width:113.46px;flex-shrink:0}
+.tool-tab:nth-child(1){--lean:-6deg}.tool-tab:nth-child(2){--lean:-5deg}.tool-tab:nth-child(5){--lean:6deg}
+.tool-tab:nth-child(1)>svg{transform:translateY(92px) scaleX(.85)}
+.tool-tab:nth-child(2)>svg{transform:translateY(60px) scaleX(.85)}
+.tool-tab:nth-child(3)>svg{transform:translateY(88px) scaleX(.85)}
+.tool-tab:nth-child(4)>svg{transform:translateY(47px) scaleX(.75)}
+.tool-tab:nth-child(5)>svg{transform:translateY(85px) scaleX(.85)}
+}
+/* Short screens scroll naturally rather than cutting off the tool tops. */
+@media(max-height:700px){
+.toolbox-scene{top:0;transform:translateX(-50%);margin-top:220px;padding-bottom:24px}
+.toolbox{margin-top:100px}
+}
+
+@media(max-width:360px){
+.tool-tab:nth-child(4){--lean:10deg}
+.tool-tab:nth-child(1)>svg{transform:translateY(92px) scaleX(.7)}
+.tool-tab:nth-child(2)>svg{transform:translateY(60px) scaleX(.7)}
+.tool-tab:nth-child(3)>svg{transform:translateY(88px) scaleX(.7)}
+.tool-tab:nth-child(4)>svg{transform:translateY(47px) scaleX(.6)}
+.tool-tab:nth-child(5)>svg{transform:translateY(85px) scaleX(.7)}
+}
