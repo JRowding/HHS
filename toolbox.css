@@ -1,0 +1,108 @@
+body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#fffdfa,#eee9e1);min-height:100svh}.intro{transition:opacity .4s}.intro.is-away{pointer-events:none}.intro.is-away .caption,.intro.is-away .progress,.intro.is-away .controls{opacity:0}.toolbox-scene{position:absolute;top:50%;left:50%;width:min(920px,92vw);transform:translate(-50%,-42%);opacity:0;visibility:hidden;perspective:1400px;transition:opacity .8s,visibility .8s}.toolbox-scene.present{opacity:1;visibility:visible}.toolbox{position:relative;height:390px;margin-top:100px;filter:drop-shadow(0 30px 25px #42221625)}.box-back{position:absolute;inset:0;border-radius:22px 22px 12px 12px;background:linear-gradient(120deg,#42151a,#751321 38%,#4c1018);box-shadow:inset 0 5px 1px #bc747944,inset 0 0 0 2px #4b121b}.box-rim{position:absolute;left:-9px;right:-9px;height:25px;top:-7px;border-radius:8px;background:linear-gradient(#c08e91,#852936 25%,#60141f 65%,#451018);box-shadow:0 5px 12px #0003;z-index:7;pointer-events:none}.site-panel{position:absolute;inset:22px 25px 24px;padding:34px 36px;background:#fbf8f2;border-radius:8px;box-shadow:inset 0 3px 15px #49282325;overflow:auto;opacity:0;transition:opacity .6s .45s;z-index:2}.opened .site-panel{opacity:1}.site-panel article{animation:page-in .4s ease both}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8b5f55}.site-panel h1{font-size:clamp(25px,4vw,40px);font-weight:600;letter-spacing:-.04em;margin:12px 0 18px}.site-panel p{font-size:15px;line-height:1.7;color:#766963;max-width:560px;margin:10px 0}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.service-card{border-top:2px solid #7b1a29;padding-top:12px}.service-card h2{font-size:15px;margin:4px 0}.service-card p{font-size:12px;line-height:1.55}.front-door{position:absolute;inset:0;z-index:5;transform-origin:50% 100%;transform-style:preserve-3d;background:linear-gradient(125deg,#9b3440 0%,#7b1a29 28%,#651320 74%,#4a0e18);border-radius:15px 15px 10px 10px;border:2px solid #4a111b;box-shadow:inset 0 2px 2px #df919766,inset 0 -8px 12px #28060b55,0 10px 22px #40201d22;transition:transform 1.15s cubic-bezier(.3,.03,.25,1),filter 1.15s}.front-door:before{content:'';position:absolute;inset:16px;border:1px solid #c4767b40;border-radius:7px;box-shadow:inset 0 0 2px #26050b}.opened .front-door{transform:rotateX(-104deg);filter:brightness(.7);pointer-events:none}.badge{position:absolute;left:50%;top:50%;width:180px;height:180px;transform:translate(-50%,-50%);border-radius:50%;background:#fff;box-shadow:0 0 0 7px #591220,0 2px 15px #270b15aa;overflow:hidden}.badge img{width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .12s}.landed .badge img{opacity:1}.latch{position:absolute;top:35%;width:26px;height:61px;border-radius:4px;background:linear-gradient(90deg,#8e9296,#ece8e2 45%,#b3b5b6 75%,#717579);box-shadow:0 3px 4px #0006,inset 0 0 0 1px #74777b}.latch:after{content:'';position:absolute;left:5px;right:5px;top:25px;height:7px;background:#363639;border-radius:2px}.latch.left{left:9%}.latch.right{right:9%}.hinge{position:absolute;width:70px;height:16px;bottom:-4px;background:repeating-linear-gradient(90deg,#a3a3a4 0 11px,#58595d 12px 13px);border-radius:4px;z-index:8;box-shadow:0 2px 3px #0005}.hinge.left{left:17%}.hinge.right{right:17%}.rivet{position:absolute;width:8px;height:8px;background:radial-gradient(circle at 30% 25%,#ded6ce,#756a68);border-radius:50%;box-shadow:0 1px 2px #0008}.r1{left:26px;top:26px}.r2{right:26px;top:26px}.r3{left:26px;bottom:26px}.r4{right:26px;bottom:26px}.tools{position:absolute;top:-155px;left:12%;right:12%;height:175px;display:flex;justify-content:space-around;align-items:flex-end;z-index:6}.tool-tab{position:relative;width:21%;height:170px;display:flex;justify-content:center;text-decoration:none;outline-offset:8px;color:#66534c;-webkit-tap-highlight-color:transparent}.tool-tab img{position:absolute;bottom:-29px;width:auto;height:150px;object-fit:contain;filter:drop-shadow(3px 3px 2px #291a1733);transition:transform .45s cubic-bezier(.2,.8,.2,1),filter .35s}.tool-tab .handle{transform:rotate(180deg)}.tool-tab .wrench{transform:rotate(12deg);height:167px}.tool-tab .hammer{height:159px;transform:rotate(168deg)}.tool-tab .driver{height:158px;transform:rotate(185deg)}.tool-tab span{position:absolute;top:-6px;white-space:nowrap;font-size:11px;letter-spacing:.06em;border-radius:15px;background:#f9f5ee;padding:7px 13px;box-shadow:0 2px 6px #47302a12;transition:color .3s,background .3s}.tool-tab:hover img,.tool-tab:focus-visible img{translate:0 -13px;filter:drop-shadow(3px 8px 4px #291a1733)}.tool-tab[aria-selected=true] span{background:#751321;color:white}.tool-tab[aria-selected=true] img{translate:0 -10px}.toolbox-hint{text-align:center;margin-top:35px;color:#806f65;font-size:12px;letter-spacing:.04em;transition:opacity .4s}.opened~.toolbox-hint{opacity:0}.toolbox-replay{position:fixed;bottom:20px;right:25px;font-size:11px;color:#95837b;opacity:0;pointer-events:none;transition:opacity .4s}.toolbox-replay.visible{opacity:1;pointer-events:auto}.dust{position:fixed;inset:0;z-index:30;pointer-events:none;overflow:hidden}.dust i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle,#cec0acaa,#ded4c480 40%,#eae2d300 70%);filter:blur(4px);opacity:0;animation:dust-bloom 1.8s ease-out var(--delay) both}.dust b{position:absolute;width:4px;height:4px;border-radius:50%;background:#c4ae94;opacity:0;animation:dust-speck 1.4s ease-out var(--delay) both}@keyframes dust-bloom{0%{opacity:0;transform:scale(.1)}20%{opacity:.75}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(2)}}@keyframes dust-speck{10%{opacity:.7}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.2)}}@keyframes page-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.toolbox-scene{transform:translate(-50%,-38%)}.toolbox{height:370px}.badge{width:145px;height:145px}.tools{left:5%;right:5%;top:-142px}.tool-tab span{font-size:10px;padding:6px 8px}.tool-tab img{height:132px}.tool-tab .hammer,.tool-tab .driver{height:141px}.tool-tab .wrench{height:150px}.site-panel{inset:20px 14px;padding:26px 22px}.service-grid{grid-template-columns:1fr;gap:7px;margin-top:16px}.service-card{padding-top:7px}.service-card p{margin:4px 0}.note{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.dust{display:none}}
+
+.tools{clip-path:inset(-20px -30px 20px -30px)}
+
+/* Oversized illustrated navigation, with lettering painted onto each tool. */
+.tools{left:3%;right:3%;top:-228px;height:244px;clip-path:inset(-20px -30px 16px -30px)}
+.tool-tab{width:19%;height:244px;align-items:flex-end;transform:rotate(var(--lean,0deg));transform-origin:50% 100%;transition:translate .4s}
+.tool-tab:nth-child(1){--lean:-10deg}.tool-tab:nth-child(2){--lean:-5deg}.tool-tab:nth-child(3){--lean:3deg}.tool-tab:nth-child(4){--lean:8deg}.tool-tab:nth-child(5){--lean:12deg}
+.tool-tab svg{height:250px;width:125px;overflow:visible;filter:drop-shadow(3px 4px 2px #38201725);transition:filter .3s}
+.tool-tab text{fill:#751321;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:12px;text-anchor:middle;letter-spacing:.35px}
+.tool-tab:hover,.tool-tab:focus-visible,.tool-tab[aria-selected=true]{translate:0 -12px}
+.tool-tab[aria-selected=true] svg g{stroke:#8a2433;fill:#fff8ec}.tool-tab:focus-visible{outline:2px solid #751321;border-radius:8px}
+.toolbox-scene{transition:opacity .05s,visibility .05s}.intro.is-away{opacity:0}
+.dust-core{position:absolute;left:50%;top:50%;width:135vw;height:125vh;transform:translate(-50%,-50%);background:radial-gradient(ellipse at center,#d7c9b3 0%,#d7c9b3 52%,#ddd0bccc 70%,#e5d9c000 90%);filter:blur(15px);animation:dust-cover 2.65s ease-in-out both}
+.dust i{animation-duration:2.6s;background:radial-gradient(circle,#d2c1a8ee,#dbcdbacc 40%,#eae2d300 70%);filter:blur(9px)}
+@keyframes dust-cover{0%{opacity:0;transform:translate(-50%,-50%) scale(.45)}17%{opacity:1;transform:translate(-50%,-50%) scale(1)}38%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.25)}}
+.opened .front-door{animation:door-away 1.5s cubic-bezier(.3,.03,.25,1) forwards}
+@keyframes door-away{0%{transform:rotateX(0);opacity:1}55%{transform:rotateX(-104deg) translateY(0);opacity:1}100%{transform:translateY(110vh) rotateX(-104deg);opacity:0;visibility:hidden}}
+@media(max-width:600px){.tools{top:-186px;height:202px;left:0;right:0}.tool-tab{height:202px}.tool-tab svg{height:208px;width:95px}.tool-tab text{font-size:13px}.toolbox{margin-top:120px}}
+@media(prefers-reduced-motion:reduce){.opened .front-door{display:none}}
+
+/* A crowded, overfilled box: broad illustrated tools nearly meet at their edges. */
+.tools{left:1%;right:1%;top:-282px;height:298px;justify-content:space-between}
+.tool-tab{width:20%;height:298px}
+.tool-tab svg{height:306px;width:100%;max-width:none;overflow:visible;transform:scaleX(1.65);transform-origin:50% 100%}
+.tool-tab:nth-child(1){--lean:-9deg}.tool-tab:nth-child(2){--lean:-3deg}.tool-tab:nth-child(3){--lean:2deg}.tool-tab:nth-child(4){--lean:7deg}.tool-tab:nth-child(5){--lean:11deg}
+.tool-tab text{font-size:12px;letter-spacing:0}
+.toolbox-scene{transform:translate(-50%,-33%)}
+@media(max-width:600px){.tools{top:-234px;height:250px;left:0;right:0}.tool-tab{height:250px}.tool-tab svg{height:258px;width:100%;transform:scaleX(1.65)}.tool-tab text{font-size:13px}.toolbox-scene{transform:translate(-50%,-29%)}}
+
+/* The rim occludes every tool; varied insertion depths make a crowded interior. */
+.tools{left:5%;right:5%;top:-260px;height:282px;clip-path:inset(-40px -70px 22px -70px);align-items:flex-end}
+.tool-tab{height:282px;width:20%;transform-origin:50% 100%;translate:0 0}
+.tool-tab svg{height:365px;width:100%;transform:translateY(84px) scaleX(1.7);transform-origin:50% 100%}
+.tool-tab:nth-child(1){--lean:-15deg;z-index:3}.tool-tab:nth-child(1) svg{transform:translateY(112px) scaleX(1.85)}
+.tool-tab:nth-child(2){--lean:-9deg;z-index:2}.tool-tab:nth-child(2) svg{transform:translateY(68px) scaleX(1.9)}
+.tool-tab:nth-child(3){--lean:7deg;z-index:4}.tool-tab:nth-child(3) svg{transform:translateY(105px) scaleX(1.75)}
+.tool-tab:nth-child(4){--lean:-5deg;z-index:1}.tool-tab:nth-child(4) svg{transform:translateY(63px) scaleX(1.9)}
+.tool-tab:nth-child(5){--lean:17deg;z-index:5}.tool-tab:nth-child(5) svg{transform:translateY(104px) scaleX(1.9)}
+.tool-tab:hover,.tool-tab:focus-visible,.tool-tab[aria-selected=true]{translate:0 -8px}
+.box-rim{height:32px;top:-10px;background:linear-gradient(#ad7378,#a14652 15%,#782031 37%,#3e111b 88%);box-shadow:0 8px 13px #21080e55,inset 0 2px 1px #e4b0a66b}
+.box-rim:before{content:'';position:absolute;left:8px;right:8px;top:-7px;height:8px;background:#33191c;border-radius:50%;box-shadow:0 -4px 11px #25140d30;z-index:-1}
+@media(max-width:600px){.tools{left:4%;right:4%;top:-203px;height:225px;clip-path:inset(-40px -40px 22px -40px)}.tool-tab{height:225px}.tool-tab svg{height:295px}.tool-tab:nth-child(1) svg{transform:translateY(92px) scaleX(1.85)}.tool-tab:nth-child(2) svg{transform:translateY(60px) scaleX(1.9)}.tool-tab:nth-child(3) svg{transform:translateY(88px) scaleX(1.75)}.tool-tab:nth-child(4) svg{transform:translateY(51px) scaleX(1.9)}.tool-tab:nth-child(5) svg{transform:translateY(85px) scaleX(1.9)}}
+
+/* Material details and clean lettering on the tool handles. */
+.tool-tab text{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.15px;fill:#402a25}
+.tool-tab:nth-child(4){--lean:8deg;z-index:6}.tool-tab:nth-child(4) svg{transform:translateY(55px) scaleX(1.8)}
+.tool-tab svg{filter:none}.tool-tab:hover svg,.tool-tab:focus-visible svg{filter:none}
+.tool-tab[aria-selected=true] svg g{stroke:#493e38;fill:initial}.tool-tab[aria-selected=true] text{fill:#751321;font-weight:700}
+.box-rim{box-shadow:inset 0 2px 1px #e4b0a64b}.box-rim:before{display:none}
+.badge{box-shadow:none;background:transparent}.badge img{object-fit:cover}
+@media(max-width:600px){.tool-tab:nth-child(4) svg{transform:translateY(47px) scaleX(1.8)}.tool-tab text{font-size:12px}}
+
+/* Match the illustrated tools with a simple, inked cartoon toolbox. */
+.toolbox{filter:none}.box-back{background:#71303a;border:3px solid #493b38;border-radius:15px 19px 12px 15px;box-shadow:none}
+.front-door{background:#963b49;border:3px solid #493b38;border-radius:17px 22px 12px 17px;box-shadow:none}
+.front-door:before{inset:15px;border:2px solid #b35a64;border-radius:10px 14px 7px 11px;box-shadow:none}
+.box-rim{top:-10px;height:32px;background:#a34653;border:3px solid #493b38;border-radius:9px 12px 7px 11px;box-shadow:none;rotate:-.25deg}
+.box-rim:before{display:none}.box-rim:after{content:'';position:absolute;left:22px;right:26px;top:6px;border-top:2px solid #c97a80;border-radius:50%;rotate:.3deg}
+.latch{background:#c5c9c8;border:2px solid #493b38;box-shadow:none;border-radius:5px 7px 4px 5px;rotate:-2deg}.latch.right{rotate:3deg}.latch:after{background:#5b5550;height:5px;top:25px}
+.hinge{background:#b9bebc;border:2px solid #493b38;box-shadow:none;border-radius:4px}.hinge:after{content:'';position:absolute;left:21px;top:0;bottom:0;border-left:2px solid #69645c;border-right:2px solid #69645c;width:22px}
+.rivet{background:#c9c8bc;border:1.5px solid #493b38;box-shadow:none;width:9px;height:9px}
+.badge{background:none;border-radius:0;box-shadow:none;overflow:visible}.badge img{object-fit:contain}
+.tool-tab:nth-child(4){--lean:16deg;z-index:6}
+.tool-tab .tool-label{position:absolute;top:158px;left:50%;translate:-50% 0;transform:rotate(calc(-1 * var(--lean)));font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.035em;text-transform:uppercase;color:#473730;background:#f1e4c8;border:2px solid #52443a;border-radius:3px 5px 3px 4px;padding:7px 10px;box-shadow:none;white-space:nowrap;line-height:1}
+.tool-label:before,.tool-label:after{content:'';position:absolute;top:3px;width:3px;height:3px;border-radius:50%;background:#9e8870}.tool-label:before{left:3px}.tool-label:after{right:3px}
+.tool-tab:nth-child(1) .tool-label{top:181px}.tool-tab:nth-child(2) .tool-label{top:167px}.tool-tab:nth-child(3) .tool-label{top:174px}.tool-tab:nth-child(4) .tool-label{top:143px}.tool-tab:nth-child(5) .tool-label{top:174px}
+.tool-tab[aria-selected=true] .tool-label{background:#f9edcf;color:#751321;border-color:#751321}
+@media(max-width:600px){.tool-tab .tool-label{font-size:9px;padding:6px 4px;letter-spacing:0}.tool-tab:nth-child(1) .tool-label{top:142px}.tool-tab:nth-child(2) .tool-label{top:124px}.tool-tab:nth-child(3) .tool-label{top:137px}.tool-tab:nth-child(4) .tool-label{top:108px}.tool-tab:nth-child(5) .tool-label{top:129px}}
+
+/* Lettering runs down each handle, with no separate label plate. */
+.tool-tab .tool-label{top:72px!important;left:50%;translate:-50% 0;transform:none;background:none!important;border:0!important;box-shadow:none;border-radius:0;padding:0;display:flex;flex-direction:column;align-items:center;gap:0;color:#372b27!important;font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;font-size:19px;line-height:1.08;font-weight:700;letter-spacing:0}
+.tool-tab .tool-label i{display:block;font-style:normal;height:1.08em}.tool-label:before,.tool-label:after{display:none}
+.tool-tab:nth-child(1) .tool-label{top:89px!important;left:49%}
+.tool-tab:nth-child(2) .tool-label{top:105px!important;left:50%}
+.tool-tab:nth-child(3) .tool-label{top:94px!important;left:50%;font-size:18px;line-height:1.05}
+.tool-tab:nth-child(3) .tool-label i:empty{height:.4em}
+.tool-tab:nth-child(4) .tool-label{top:101px!important;left:50%}
+.tool-tab:nth-child(5) .tool-label{top:86px!important;left:50%;font-size:18px}
+.tool-tab[aria-selected=true] .tool-label{color:#751321!important}
+@media(max-width:600px){.tool-tab .tool-label{font-size:14px}.tool-tab:nth-child(1) .tool-label{top:67px!important}.tool-tab:nth-child(2) .tool-label{top:82px!important}.tool-tab:nth-child(3) .tool-label{top:73px!important;font-size:13px}.tool-tab:nth-child(4) .tool-label{top:78px!important}.tool-tab:nth-child(5) .tool-label{top:67px!important;font-size:13px}}
+
+@media(min-width:601px){.tool-tab:nth-child(1) .tool-label{top:76px!important}.tool-tab:nth-child(3) .tool-label{top:85px!important}.tool-tab:nth-child(4) .tool-label{top:94px!important}}
+
+/* Smaller, centred lettering on the visible handle surfaces. */
+.tool-tab .tool-label{font-size:16px;line-height:1.08;text-align:center;align-items:center}
+.tool-tab .tool-label i{width:1.15em;text-align:center}
+.tool-tab:nth-child(1) .tool-label{left:49%;top:84px!important}
+.tool-tab:nth-child(2) .tool-label{left:50%;top:117px!important}
+.tool-tab:nth-child(3) .tool-label{left:50%;top:94px!important;font-size:16px;line-height:1.08}
+.tool-tab:nth-child(4) .tool-label{left:50%;top:106px!important}
+.tool-tab:nth-child(5) .tool-label{left:50%;top:93px!important;font-size:16px}
+@media(max-width:600px){.tool-tab .tool-label{font-size:12px}.tool-tab:nth-child(1) .tool-label{top:72px!important}.tool-tab:nth-child(2) .tool-label{top:88px!important}.tool-tab:nth-child(3) .tool-label{top:77px!important;font-size:12px}.tool-tab:nth-child(4) .tool-label{top:82px!important}.tool-tab:nth-child(5) .tool-label{top:72px!important;font-size:12px}}
+
+.tool-tab .tool-label{font-family:Impact,"Arial Black","Segoe UI Black",sans-serif;font-weight:900;font-size:18px;line-height:1.02;letter-spacing:.2px;color:#32251f!important}
+.tool-tab .tool-label i{height:1.02em;width:1.2em}
+.tool-tab:nth-child(3) .tool-label,.tool-tab:nth-child(5) .tool-label{font-size:18px;line-height:1.02}
+.tool-tab:nth-child(5) .tool-label{top:111px!important}
+@media(max-width:600px){.tool-tab .tool-label,.tool-tab:nth-child(3) .tool-label,.tool-tab:nth-child(5) .tool-label{font-size:13px}.tool-tab:nth-child(5) .tool-label{top:86px!important}}
+
+/* Original angular, sliced display lettering; SVG shapes keep it consistent offline. */
+.tool-tab .tool-label i{height:18px;width:14px;display:flex;align-items:center;justify-content:center}
+.tool-tab .tool-label .letter-glyph{height:16px!important;width:11px!important;max-width:none!important;transform:none!important;translate:none!important;filter:none!important;overflow:visible}
+.tool-tab .tool-label{gap:1px;color:#291f1b!important}
+@media(max-width:600px){.tool-tab .tool-label i{height:13px;width:11px}.tool-tab .tool-label .letter-glyph{height:12px!important;width:8px!important}.tool-tab .tool-label{gap:0}}
+
+.tool-tab:nth-child(5) .tool-label{top:95px!important}
+@media(max-width:600px){.tool-tab:nth-child(5) .tool-label{top:74px!important}}
