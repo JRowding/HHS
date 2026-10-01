@@ -141,3 +141,10 @@ html{overflow-x:clip}
 @media(max-width:600px) and (max-height:700px){.toolbox-scene{margin-top:125px}}
 
 @media(max-width:600px){.tool-tab:nth-child(3){left:-7px}.tool-tab:nth-child(4){left:5px}}
+
+/* Fine alignment of the mobile wrench and a slightly longer hammer handle. */
+@media(max-width:600px){
+.tool-tab:nth-child(2) .tool-label{top:96px!important}
+.tool-tab:nth-child(3)>svg>g>path:nth-child(-n+2){transform:scaleY(1.06);transform-origin:50% 100%;transform-box:view-box}
+.tool-tab:nth-child(3)>svg>g>path:nth-child(n+3){transform:translateY(-13px)}
+}
