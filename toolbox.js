@@ -14,5 +14,5 @@ async function handoff(){if(transitioning)return;transitioning=true;const stage=
 document.addEventListener('hester:ready',handoff);repeat.onclick=()=>{scene.classList.remove('present','landed');box.classList.remove('opened');door.hidden=false;intro.classList.remove('is-away');intro.inert=false;intro.removeAttribute('aria-hidden');document.querySelector('.stage').style.visibility='';repeat.classList.remove('visible');opened=false;transitioning=false;current=null;panel.innerHTML='';panel.setAttribute('aria-hidden','true');tabs.forEach(t=>{t.tabIndex=-1;t.setAttribute('aria-selected','false')});history.replaceState(null,'',location.pathname+location.search);HesterLoader.play()};
 const skip=document.createElement('button');skip.textContent='Skip opening';skip.onclick=()=>{HesterLoader.seek(HesterLoader.duration);handoff()};document.querySelector('.controls').append(skip);
 // Deterministic review entry for the toolbox itself.
-if(new URLSearchParams(location.search).has('toolbox'))setTimeout(()=>{HesterLoader.seek(HesterLoader.duration);handoff()},300);
+if(new URLSearchParams(location.search).has('toolbox'))HesterLoader.ready.then(()=>{HesterLoader.seek(HesterLoader.duration);handoff()});
 })();
