@@ -1,0 +1,41 @@
+
+/* A workshop wall: soft paper, pencil lines, and pinned photographic prints. */
+body.workshop-ready{display:block;background-color:#f3efe7;background-image:linear-gradient(#8d81740a 1px,transparent 1px),linear-gradient(90deg,#8d81740a 1px,transparent 1px);background-size:32px 32px}
+.workshop-ready .toolbox-scene.present{position:relative;top:auto;left:auto;transform:none;margin:260px auto 0;padding-bottom:0}
+.workshop-ready .toolbox{margin-top:100px}
+.workshop-ready .note{position:static;text-align:center;padding:20px 0 28px}
+.project-board{position:relative;width:min(1040px,calc(100% - 64px));margin:64px auto 20px;padding:38px 38px 22px;border:3px solid #564c42;border-radius:8px 14px 10px 12px;background-color:#eae3d5;background-image:radial-gradient(#9c8b6c20 .8px,transparent .8px);background-size:7px 7px;box-shadow:0 9px 0 -3px #d4c7b2,0 12px 0 -4px #645648}
+.project-board[hidden]{display:none}
+.board-heading{position:relative;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:4px 25px;margin-bottom:36px;color:#3d3530}
+.board-kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#7d4d46}
+.board-heading .board-kicker{grid-column:1/-1}
+.board-heading h2{font-family:Georgia,serif;font-size:clamp(28px,4vw,42px);line-height:1.12;letter-spacing:-.035em;font-weight:400;margin:9px 0}
+.board-heading h2 em{color:#8b3342}
+.board-heading p{font-size:13px;line-height:1.8;color:#786b5d;margin:0}
+.pencil-mark{position:absolute;width:130px;left:110px;bottom:-17px;color:#a1404d;rotate:-3deg}
+.project-prints{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:6px 0 14px}
+.project-print{position:relative;display:block;width:100%;color:#393029;background:#fffdf7;padding:12px 12px 15px;border:1px solid #d3cabb;box-shadow:2px 5px 0 #76634b18,0 10px 16px #46352212;rotate:-2deg;text-align:left;transition:rotate .25s,translate .25s,box-shadow .25s;border-radius:2px;cursor:pointer}
+.project-print.print-1{rotate:2deg}.project-print:hover,.project-print:focus-visible{rotate:0deg;translate:0 -5px;box-shadow:0 12px 20px #46352222;color:#393029}
+.project-print:focus-visible{outline:3px solid #8b3342;outline-offset:5px}
+.paper-tape{position:absolute;z-index:2;top:-15px;left:calc(50% - 44px);width:88px;height:27px;background:#d7bb85c9;rotate:-5deg;clip-path:polygon(3% 0,98% 4%,96% 22%,100% 39%,97% 61%,100% 85%,98% 100%,1% 96%,3% 75%,0 56%,4% 29%);box-shadow:inset 0 0 0 1px #c3a572}
+.print-1 .paper-tape{rotate:5deg;background:#c7c8a4cf}
+.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.photo-pair>span{position:relative;overflow:hidden;aspect-ratio:4/5;display:block;background:#ddd6c9}
+.photo-pair img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-pair b{position:absolute;bottom:9px;left:9px;background:#fffaf0ee;padding:5px 8px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#47392d;rotate:-2deg}
+.print-caption{position:relative;display:block;padding:13px 4px 0}.print-caption strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:400}.print-caption small{display:block;margin-top:5px;font-size:10px;letter-spacing:.03em;color:#877566}.view-mark{position:absolute;right:4px;top:16px;font-size:24px;color:#903846}
+.board-footer{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px dashed #a99a82;padding-top:21px;margin-top:15px;font-size:10px;color:#80705f}.board-footer a{color:#8b3342;text-underline-offset:4px}
+.project-dialog{width:min(1100px,calc(100vw - 32px));max-height:calc(100svh - 32px);padding:28px;background:#fffaf2;border:3px solid #51453d;border-radius:8px;overflow:auto;color:#44362d}
+.project-dialog::backdrop{background:#24201dda;backdrop-filter:blur(5px)}
+.photo-close{position:absolute;top:10px;right:12px;width:44px;height:44px;font-size:30px;color:#7b2c3b;border-radius:50%;background:#ebe2d3;line-height:1}
+.dialog-heading{padding-right:44px}.dialog-heading h2{font-family:Georgia,serif;font-weight:400;font-size:30px;margin:8px 0}.dialog-heading p{color:#87705f;font-size:13px;line-height:1.6}.original-project{display:block;width:100%;height:auto;max-height:62svh;object-fit:contain;margin:20px auto;background:#eae3d7}.project-source{font-size:11px;color:#8b3342;text-underline-offset:4px}.photo-open{overflow:hidden}
+.panel-projects{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:24px 3px}.panel-projects .project-print{padding:7px}.panel-projects .photo-pair>span{aspect-ratio:1}.panel-projects .print-caption strong{font-size:16px}.panel-projects .paper-tape{display:none}.panel-projects .photo-pair b{font-size:7px;left:4px;bottom:4px;padding:3px}.panel-projects .print-caption{padding-bottom:5px}
+@media(max-width:600px){
+.workshop-ready .toolbox-scene.present{margin:140px auto 0}
+.project-board{width:calc(100% - 32px);margin:38px auto 22px;padding:25px 20px 20px}
+.board-heading{display:block;margin-bottom:34px}.board-heading h2{font-size:31px;margin:10px 0 14px}.board-heading p{font-size:12px}.pencil-mark{left:110px;bottom:65px;width:108px}
+.project-prints{grid-template-columns:1fr;gap:38px;padding:6px 3px 16px}.project-print{padding:10px}.photo-pair>span{aspect-ratio:5/6}.print-caption strong{font-size:21px}.board-footer{align-items:flex-start;flex-direction:column;font-size:9px;line-height:1.7}
+.project-dialog{padding:20px 14px}.dialog-heading h2{font-size:25px}.original-project{max-height:none}.panel-projects{grid-template-columns:1fr}.panel-projects .photo-pair>span{aspect-ratio:4/3}
+}
+
+@media(max-width:600px){.pencil-mark{display:none}.board-heading h2 em{text-decoration:underline;text-decoration-color:#a1404d66;text-decoration-thickness:2px;text-underline-offset:7px}}
