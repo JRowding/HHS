@@ -76,9 +76,9 @@ body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#fffdfa,#ee
 .tool-tab:nth-child(3) .tool-label{top:94px!important;left:50%;font-size:18px;line-height:1.05}
 .tool-tab:nth-child(3) .tool-label i:empty{height:.4em}
 .tool-tab:nth-child(4) .tool-label{top:101px!important;left:50%}
-.tool-tab:nth-child(5) .tool-label{top:86px!important;left:50%;font-size:18px}
+.tool-tab:nth-child(5) .tool-label{top:80px!important;left:50%;font-size:18px}
 .tool-tab[aria-selected=true] .tool-label{color:#751321!important}
-@media(max-width:600px){.tool-tab .tool-label{font-size:14px}.tool-tab:nth-child(1) .tool-label{top:67px!important}.tool-tab:nth-child(2) .tool-label{top:82px!important}.tool-tab:nth-child(3) .tool-label{top:73px!important;font-size:13px}.tool-tab:nth-child(4) .tool-label{top:78px!important}.tool-tab:nth-child(5) .tool-label{top:67px!important;font-size:13px}}
+@media(max-width:600px){.tool-tab .tool-label{font-size:14px}.tool-tab:nth-child(1) .tool-label{top:67px!important}.tool-tab:nth-child(2) .tool-label{top:82px!important}.tool-tab:nth-child(3) .tool-label{top:73px!important;font-size:13px}.tool-tab:nth-child(4) .tool-label{top:72px!important}.tool-tab:nth-child(5) .tool-label{top:67px!important;font-size:13px}}
 
 @media(min-width:601px){.tool-tab:nth-child(1) .tool-label{top:76px!important}.tool-tab:nth-child(3) .tool-label{top:85px!important}.tool-tab:nth-child(4) .tool-label{top:94px!important}}
 
@@ -96,7 +96,7 @@ body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#fffdfa,#ee
 .tool-tab .tool-label i{height:1.02em;width:1.2em}
 .tool-tab:nth-child(3) .tool-label,.tool-tab:nth-child(5) .tool-label{font-size:18px;line-height:1.02}
 .tool-tab:nth-child(5) .tool-label{top:111px!important}
-@media(max-width:600px){.tool-tab .tool-label,.tool-tab:nth-child(3) .tool-label,.tool-tab:nth-child(5) .tool-label{font-size:13px}.tool-tab:nth-child(5) .tool-label{top:86px!important}}
+@media(max-width:600px){.tool-tab .tool-label,.tool-tab:nth-child(3) .tool-label,.tool-tab:nth-child(5) .tool-label{font-size:13px}.tool-tab:nth-child(5) .tool-label{top:80px!important}}
 
 /* Original angular, sliced display lettering; SVG shapes keep it consistent offline. */
 .tool-tab .tool-label i{height:18px;width:14px;display:flex;align-items:center;justify-content:center}
@@ -110,28 +110,34 @@ body{overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#fffdfa,#ee
 /* Public site: keep the opening automatic and the navigation uncluttered. */
 .controls,.toolbox-replay,.toolbox-hint{display:none!important}
 html{overflow-x:clip}
-/* Keep tool artwork and its lettering in the same coordinate system on phones. */
+/* Compact mobile proportions, with no horizontal distortion of tool artwork. */
 @media(max-width:600px){
 .toolbox-scene{width:calc(100vw - 40px)}
-.tool-tab>svg{width:113.46px;flex-shrink:0}
-.tool-tab:nth-child(1){--lean:-6deg}.tool-tab:nth-child(2){--lean:-5deg}.tool-tab:nth-child(5){--lean:6deg}
-.tool-tab:nth-child(1)>svg{transform:translateY(92px) scaleX(.85)}
-.tool-tab:nth-child(2)>svg{transform:translateY(60px) scaleX(.85)}
-.tool-tab:nth-child(3)>svg{transform:translateY(88px) scaleX(.85)}
-.tool-tab:nth-child(4)>svg{transform:translateY(47px) scaleX(.75)}
-.tool-tab:nth-child(5)>svg{transform:translateY(85px) scaleX(.85)}
+.toolbox{height:210px}
+.tools{top:-175px;height:197px}
+.tool-tab{height:197px}
+.tool-tab>svg{height:230px;width:88.46px;flex-shrink:0}
+.tool-tab:nth-child(1){--lean:-6deg}.tool-tab:nth-child(2){--lean:-5deg}
+.tool-tab:nth-child(4){--lean:2deg}.tool-tab:nth-child(5){--lean:8deg}
+.tool-tab:nth-child(1)>svg{transform:translateY(72px)}
+.tool-tab:nth-child(2)>svg{transform:translateY(47px)}
+.tool-tab:nth-child(3)>svg{transform:translateY(69px)}
+.tool-tab:nth-child(4)>svg{transform:translateY(36px)}
+.tool-tab:nth-child(5)>svg{transform:translateY(66px)}
+.tool-tab .tool-label i{height:11px;width:10px}
+.tool-tab .tool-label .letter-glyph{height:10px!important;width:7px!important}
+.tool-tab:nth-child(1) .tool-label{top:69px!important}
+.tool-tab:nth-child(2) .tool-label{top:88px!important}
+.tool-tab:nth-child(3) .tool-label{top:72px!important}
+.tool-tab:nth-child(4) .tool-label{top:80px!important}
+.tool-tab:nth-child(5) .tool-label{top:76px!important}
+.badge{width:105px;height:105px}
 }
 /* Short screens scroll naturally rather than cutting off the tool tops. */
 @media(max-height:700px){
 .toolbox-scene{top:0;transform:translateX(-50%);margin-top:220px;padding-bottom:24px}
 .toolbox{margin-top:100px}
 }
+@media(max-width:600px) and (max-height:700px){.toolbox-scene{margin-top:125px}}
 
-@media(max-width:360px){
-.tool-tab:nth-child(4){--lean:10deg}
-.tool-tab:nth-child(1)>svg{transform:translateY(92px) scaleX(.7)}
-.tool-tab:nth-child(2)>svg{transform:translateY(60px) scaleX(.7)}
-.tool-tab:nth-child(3)>svg{transform:translateY(88px) scaleX(.7)}
-.tool-tab:nth-child(4)>svg{transform:translateY(47px) scaleX(.6)}
-.tool-tab:nth-child(5)>svg{transform:translateY(85px) scaleX(.7)}
-}
+@media(max-width:600px){.tool-tab:nth-child(3){left:-7px}.tool-tab:nth-child(4){left:5px}}
