@@ -39,3 +39,22 @@ body.workshop-ready{display:block;background-color:#f3efe7;background-image:line
 }
 
 @media(max-width:600px){.pencil-mark{display:none}.board-heading h2 em{text-decoration:underline;text-decoration-color:#a1404d66;text-decoration-thickness:2px;text-underline-offset:7px}}
+
+/* Project photographs live inside the toolbox, with no separate home-page board. */
+.panel-projects{gap:18px;margin:20px 3px}.panel-projects .photo-pair>span{aspect-ratio:4/3}
+@media(max-width:600px){
+.site-panel{padding:18px 18px}.site-panel h1{font-size:24px}
+.toolbox-scene{transform:translate(-50%,-29%)}
+.opened .front-door .badge{visibility:hidden}
+.panel-projects{gap:26px}.panel-projects .print-caption strong{font-size:18px}
+}
+
+.project-video-card{grid-column:1/-1;display:flex;gap:18px;align-items:center;text-align:left;background:#eee6d8;color:#44362d;border:1px dashed #a79478;padding:12px;border-radius:5px}
+.video-preview{display:block;position:relative;width:100px;height:75px;flex-shrink:0;overflow:hidden;border:3px solid #fffaf2;rotate:-2deg}.video-preview img{width:100%;height:100%;object-fit:cover}.video-play{position:absolute;left:50%;top:50%;translate:-50% -50%;background:#7b2438e8;color:white;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.project-video-card strong{font-family:Georgia,serif;font-size:18px;font-weight:400;display:block}.project-video-card small{font-size:10px;color:#897561;display:block;margin-top:7px;line-height:1.5}
+.video-dialog{width:min(420px,calc(100vw - 24px))}.video-embed{width:100%;height:min(570px,65svh);margin:18px 0;background:#eee6d8}.video-embed iframe{border:0;display:block;width:100%;height:100%}
+@media(max-width:600px){.project-video-card{gap:12px}.video-preview{width:75px;height:65px}.project-video-card strong{font-size:16px}}
+
+.video-embed{width:min(100%,320px,calc(65svh * .5625));height:auto;aspect-ratio:9/16;margin:18px auto}
+
+@media(max-width:600px){.site-panel:has(.panel-projects) h1{font-size:18px;margin:8px 0 12px}.panel-projects{margin-top:14px}}
